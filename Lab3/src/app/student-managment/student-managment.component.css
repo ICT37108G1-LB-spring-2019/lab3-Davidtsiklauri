@@ -1,0 +1,9 @@
+ .form-row{
+display: block;
+margin: 0px;
+padding: 0px;
+}
+.man{
+border: 1px solid lightblue;
+padding: 15px;
+}

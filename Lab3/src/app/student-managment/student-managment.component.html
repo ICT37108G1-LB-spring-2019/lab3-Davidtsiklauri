@@ -1,0 +1,31 @@
+ <div class="man">
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">სახელი</label>
+      <input #name type="text" class="form-control" id="validationCustom01" placeholder="სახელი">
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label  for="validationCustom02">გვარი</label>
+<input #lastName type="text" class="form-control" id="validationCustom02" placeholder="გვარი">
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">პირადი ნომერი</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">ID</span>
+        </div>
+        <input #id type="text" class="form-control" id="validationCustomUsername" placeholder="პირადი ნომერი" aria-describedby="inputGroupPrepend">
+        <div class="invalid-feedback">
+        </div>
+      </div>
+    </div>
+  </div>
+ <button (click)="onClick(name,lastName,id)" class="btn btn-primary" type="submit">შენახვა</button>
+</form>
+<app-student-item [student] = "Student"></app-student-item>
+</div>
